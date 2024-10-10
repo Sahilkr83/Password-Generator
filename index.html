@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper"> 
+    <h1>Password generator</h1>
+
+    <div class="pass-display">
+
+        <input type="text" readonly placeholder="Password" class="pass-input">
+        
+        <button class="copy-Btn">
+            <span class="copied"></span>
+            <img src="assets/copy.svg" alt="" width="23">
+        </button>
+
+    </div>
+
+    <div class="generator">
+        <div class="pass-length">
+            <p class="heading">Password Lenght</p>
+            <p class="lenght-num">
+                0
+            </p>
+        </div>
+
+        <input type="range" min="1" max="20" class="slider" step="1">
+
+        <!-- check boxes -->
+
+        <div class="check">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase letters</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes Lowercase letters</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers </label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Includes Symbols </label>
+        </div>
+
+        <!-- strength -->
+         <div class="strength">
+            <p>Strength</p>
+            <div class="strength-color"></div>
+         </div>
+
+         <!-- generete pass -->
+
+         <button class="pass-gen">Generate Password</button>
+    </div>
+
+  </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
